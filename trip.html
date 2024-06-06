@@ -1,14 +1,110 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Reisebuchungs-Formular</title>
+     <meta charset="UTF-8">
+     <title>Reisebuchungs-Formular</title>
 
 </head>
 <body>
 
 <h1>Reisebuchungs-Formular</h1>
+<form action="https://it.bzz.ch/demo/formdata/index.php ">
+     <label>Abflughafen:
+          <select name="Abflughafen">
+               <optgroup label="Deutschland">
+                    <option>Berlin</option>
+                    <option>Frankfurt</option>
+                    <option>Köln</option>
+               </optgroup>
+               <optgroup label="France">
+                    <option>Lyon</option>
+                    <option>Niza</option>
+                    <option>Paris</option>
+               </optgroup>
+               <optgroup label="oesterreich">
+                    <option>Salzburg</option>
+                    <option>Wien</option>
+                    <option>Serfaus</option>
+               </optgroup>
+               <optgroup label="Italien">
+                    <option>Rom</option>
+                    <option>Florence</option>
+                    <option>Mailand</option>
+               </optgroup>
+          </select>
+     </label> <br> <br>
+     <label>Art der Unterkunft: <br>
+          <input type="radio" id="mc" name="ArtUnterkunft" value="Hotel">
+          <label for="mc"> Hotel</label>
+          <input type="radio" id="vi" name="ArtUnterkunft" value="Ferienwohnung ">
+          <label for="vi"> Ferienwohnung </label>
+          <input type="radio" id="ae" name="ArtUnterkunft" value="Hostel">
+          <label for="ae"> Hostel</label>
+     </label> <br> <br>
+     <label>zusätzliche Dienstleistungen:<br>
+          <input type="checkbox" name="zusätzlicheDienstleistungen[]" value="Reiseversicherung" id="check1" checked>
+          <label for="check1">Reiseversicherung</label>
+          <input type="checkbox" name="zusätzlicheDienstleistungen[]" value="Flughafentransfer " id="check2">
+          <label for="check2">Flughafentransfer </label>
+          <input type="checkbox" name="zusätzlicheDienstleistungen[]" value="zusätzlichesGepäck" id="check3">
+          <label for="check3">zusätzliches Gepäck</label>
+     </label>
+     <br> <br>
+     <label>Dauer:<br>
+          <label for="Anfangszeitpunkt">Anfangszeitpunkt</label>
+          <input id="Anfangszeitpunkt" type="date">
+          <label for="Endzeitpunkt">Endzeitpunkt</label>
+          <input id="Endzeitpunkt" type="date">
+          <label for="dauer">Dauer</label>
+          <input id="dauer" type="number" min="1" max="21" step="1">
+     </label>
+     <br> <br>
+     <label>Anzahl Reisende <br>
+          <label for="anzahlreisende">Anzahl Reisende</label>
+          <input id="anzahlreisende" type="number" min="1">
+     </label> <br> <br>
+     <label>Fluggesellschaft :
+          <select name="Fluggesellschaft []">
+               <option>Edelweiss</option>
+               <option>Swiss</option>
+               <option>Turkish Airlines</option>
+               <option>SunExpress</option>
+               <option>RyanAir</option>
+          </select>
+     </label> <br> <br>
+     <label>zusätzliche Dienstleistungen:<br>
+          <input type="checkbox" name="zusätzlicheDienstleistungen[]" value=" Priority-Check-In" id="check4" checked>
+          <label for="check4"> Priority-Check-In</label>
+          <input type="checkbox" name="zusätzlicheDienstleistungen[]" value="zusätzlichesHandgepäck " id="check5">
+          <label for="check5">zusätzliches Handgepäck </label>
+          <input type="checkbox" name="zusätzlicheDienstleistungen[]" value="BuchungeinesMietwagens" id="check6">
+          <label for="check6">Buchung eines Mietwagens</label>
+     </label>
+     <br> <br>
+     <p>
+          <label> Reiseziele
+               <input type="search" list="Reiseziele"/>
+               <datalist id="Reiseziele">
+                    <option value="Zürich"></option>
+                    <option value="Peking"></option>
+                    <option value="Oslo"></option>
+                    <option value="Besenland"></option>
+                    <option value="Afgahnistan"></option>
+                    <option value="Uzbekistan"></option>
+                    <option value="Italien"></option>
+                    <option value="Marokko"></option>
+               </datalist>
+          </label>
+     </p>
+     <label>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+     </label>
+     <br>
+     <button type="reset">reset</button>
+     <button type="submit">submit</button>
 
+</form>
 
 </body>
 </html>
