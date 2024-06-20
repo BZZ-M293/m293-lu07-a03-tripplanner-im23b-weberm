@@ -51,17 +51,18 @@
      </label>
      <br> <br>
      <label>Dauer:<br>
-          <label for="Anfangszeitpunkt">Anfangszeitpunkt</label>
-          <input id="Anfangszeitpunkt" type="date">
-          <label for="Endzeitpunkt">Endzeitpunkt</label>
-          <input id="Endzeitpunkt" type="date">
+          <label for="anfangszeitpunkt">Anfangszeitpunkt</label>
+          <input id="anfangszeitpunkt" type="date">
+          <label for="endzeitpunkt">Endzeitpunkt</label>
+          <input id="endzeitpunkt" type="date">
           <label for="dauer">Dauer</label>
           <input id="dauer" type="number" min="1" max="21" step="1">
      </label>
      <br> <br>
      <label>Anzahl Reisende <br>
           <label for="anzahlreisende">Anzahl Reisende</label>
-          <input id="anzahlreisende" type="number" min="1">
+          <input id="anzahlreisende" type="number" min="1" placeholder="12">
+
      </label> <br> <br>
      <label>Fluggesellschaft :
           <select name="Fluggesellschaft []">
@@ -84,7 +85,7 @@
      <p>
           <label> Reiseziele
                <input type="search" list="Reiseziele"/>
-               <datalist id="Reiseziele">
+               <datalist id="reiseziele">
                     <option value="Zürich"></option>
                     <option value="Peking"></option>
                     <option value="Oslo"></option>
